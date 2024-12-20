@@ -1,0 +1,39 @@
+/* src/components/LanguageSwitcher.css */
+
+.language-switcher {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons */
+}
+
+.flag-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px; /* Adjust padding around the button */
+    gap: 8px; /* Space between flag image and text */
+}
+
+.flag-image {
+    width: 40px; /* Fixed size for the flags */
+    height: 30px; /* Adjust height to maintain aspect ratio */
+    border-radius: 4px; /* Optional: adds rounded corners */
+    transition: transform 0.3s, border 0.3s;
+}
+
+.flag-text {
+    font-size: 14px; /* Adjust font size for the text */
+    color: #c2185b;
+}
+
+.flag-button.selected .flag-image {
+    transform: scale(1.1); /* Slightly enlarge the selected flag */
+    border: 2px solid #000; /* Add border to highlight the selected flag */
+    /* Optional: Add a shadow to make it more noticeable */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.flag-button.selected .flag-text {
+    font-weight: bold; /* Highlight text of the selected button */
+}

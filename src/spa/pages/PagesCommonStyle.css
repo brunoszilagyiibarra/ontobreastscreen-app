@@ -1,0 +1,116 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: calc(100vh - 250px); /* Ajusta la altura según la altura del encabezado */
+    overflow: hidden;
+
+    color: #fff; /* Cambiar a un color que contraste bien con el rosa */
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+}
+
+/* Contenedor de contenido con superposición */
+.page-content {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    color: black; /* Texto negro para contraste */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+}
+
+#form-preview-section {
+    max-height: 400px; /* Ajustar según sea necesario */
+    height: 300px;
+    overflow-y: auto;  /* Agrega scroll vertical si el contenido se desborda */
+    overflow-x: hidden; /* Opcional: oculta el scroll horizontal */
+    padding: 10px; /* Opcional: agrega padding alrededor del contenido */
+}
+
+/* Estilo del texto */
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+    margin: 0 0 10px;
+    color: #c2185b; /* Color rosa más fuerte para los encabezados */
+}
+
+.page-content p,
+.page-content li,
+.page-content ol {
+    font-size: 1.2rem;
+    color: #880e4f; /* Rosa oscuro para párrafos y listas */
+}
+
+/* Estilos de botones y selects */
+.back-button, .next-button {
+    background-color: #d81b60; /* Rosa para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el estado disabled */
+.back-button:disabled, .next-button:disabled {
+    background-color: #e1a1b7; /* Un rosa más suave para el botón deshabilitado */
+    color: #c1c1c1;  /* Color más claro para el texto */
+    cursor: not-allowed; /* Cambiar el cursor para indicar que el botón está deshabilitado */
+    opacity: 0.6; /* Hacer el botón ligeramente translúcido */
+}
+
+.next-button:hover {
+    background-color: #c2185b; /* Rosa más oscuro al pasar el ratón */
+}
+
+.option-select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #c2185b;
+    border: 1px solid #880e4f; /* Puedes cambiar a un color más claro si quieres */
+}
+
+/* Estilo para cuando el Dropdown está enfocado */
+.dropdown-toggle.focused {
+    border-color: #FF4081; /* Cambia este color al que prefieras */
+    background-color: #d81b60; /* Rosa para el botón */
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(255, 64, 129, 0.25); /* Añadir sombra de enfoque */
+}
+
+.dropdown-toggle:hover {
+    background-color: #a21447; /* Rosa para el botón */
+    color: white;
+}
+
+
+/* Opcional: Transición suave para los bordes */
+.dropdown-toggle {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #d81b60; /* Rosa para el botón */
+    color: white;
+}
+
+.form-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Similar aquí */
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    align-self: center;
+}

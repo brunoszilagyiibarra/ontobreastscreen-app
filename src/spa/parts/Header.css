@@ -1,0 +1,49 @@
+.app-header {
+    background-image: url('header.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color for better readability */
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    height: 300px; /* Adjust height to ensure visibility */
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    /* Optional: Add a shadow or border to make it stand out */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Styling for header text */
+.app-header h1 {
+    font-size: 2em; /* Adjust font size as needed */
+    margin: 0;
+}
+
+/* Contenedor de contenido con superposición */
+.app-title {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: black; /* Texto negro para contraste */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+}
+
+/* Estilo del texto */
+.app-title h1 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    color: #c2185b; /* Color rosa más fuerte para los encabezados */
+}
+
+.app-image {
+    width: 40px; /* Fixed size for the flags */
+    height: 30px; /* Adjust height to maintain aspect ratio */
+    margin-left: 10px;
+    border-radius: 4px; /* Optional: adds rounded corners */
+    transition: transform 0.3s, border 0.3s;
+}

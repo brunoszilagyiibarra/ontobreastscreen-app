@@ -1,0 +1,98 @@
+/* Ensure the App takes full screen */
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header should be fixed or flexed based on layout */
+.Header {
+    flex-shrink: 0; /* Prevent the header from shrinking */
+    position: fixed; /* Ensure it stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* BottomHeaderPanel should be fixed or flexed based on layout */
+.BottomHeaderPanel {
+    flex-shrink: 0; /* Prevent it from shrinking */
+    position: fixed; /* Ensure it stays at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Page container should take the remaining space */
+.page-container {
+    padding-top: 60px; /* Adjust padding to account for fixed header height */
+    padding-bottom: 60px; /* Adjust padding to account for fixed bottom header height */
+    flex-grow: 1; /* Allow it to take the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Page wrapper holds the content with transitions */
+.page-wrapper {
+    position: absolute;
+    top: 200px;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70%; /* Adjust to fit inside header and bottom panel */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* O cualquier altura que necesites */
+}
+
+
+/* Slide transition (entering from the right) */
+.slide-enter-forward {
+    transform: translateX(100%);
+}
+
+.slide-enter-active-forward {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide transition (exiting to the left) */
+.slide-exit-forward {
+    transform: translateX(0);
+}
+
+.slide-exit-active-forward {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide transition (entering from the left) */
+.slide-enter-backward {
+    transform: translateX(-100%);
+}
+
+.slide-enter-active-backward {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide transition (exiting to the right) */
+.slide-exit-backward {
+    transform: translateX(0);
+}
+
+.slide-exit-active-backward {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}

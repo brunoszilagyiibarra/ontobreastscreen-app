@@ -1,0 +1,56 @@
+{
+  "name": "breast-cancer-recommendation-frontend",
+  "version": "2.9.0",
+  "keywords": [
+    "ontologies",
+    "ui-forms",
+    "recommender"
+  ],
+  "author": "Bruno Alberto Szilagyi Ibarra",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.14",
+    "@mui/x-data-grid": "^7.1.0",
+    "@mui/x-tree-view": "^6.17.0",
+    "axios": "^1.6.5",
+    "bootstrap": "^5.3.3",
+    "i18next": "^23.15.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^15.0.2",
+    "react-router-dom": "^6.21.2",
+    "react-scripts": "^5.0.1",
+    "react-spinners": "^0.14.1",
+    "react-tabs": "^6.0.2",
+    "react-transition-group": "^4.4.5"
+  },
+  "devDependencies": {
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^9.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

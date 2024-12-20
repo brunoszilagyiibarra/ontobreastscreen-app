@@ -1,0 +1,42 @@
+/* src/components/PanelLayout.css */
+
+.panel {
+    display: flex;
+    /*background-color: #f0f0f0; !* Light gray background for the panel *!*/
+    background: rgba(255, 192, 203, 1);
+    padding: 10px; /* Add some padding around the panel */
+    border-radius: 8px; /* Optional: rounded corners for the panel */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for better visual separation */
+    color: #c2185b;
+}
+
+.panel-section {
+    flex: 1; /* Each section takes equal space */
+}
+
+.left {
+    border-right: 1px solid #ddd; /* Light border to separate the two sections */
+    padding-left: 15px;
+}
+
+.right {
+    display: flex;
+    justify-content: right; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+}
+
+/* Optionally, add media queries to adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .panel {
+        flex-direction: column;
+    }
+
+    .panel-section {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .right {
+        margin-top: 20px; /* Add space between sections when stacked vertically */
+    }
+}
